@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Click Example</title>
+    <style>
+        #text {
+            color: red;
+        }
+    </style>
+    <script>
+        function changeTextAndColor() {
+            const paragraph = document.getElementById("text");
+            paragraph.innerText = "The text and color have been changed!";
+            paragraph.style.color = "blue";
+        }
+    </script>
+</head>
+<body>
+    <h1>Button Click Example</h1>
+    <p id="text">This is the original text.</p>
+    <button onclick="changeTextAndColor()">Click Me</button>
+</body>
+</html>
